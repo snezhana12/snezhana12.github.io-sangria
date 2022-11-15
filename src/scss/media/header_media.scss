@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-    header {
+    .page {
         padding: 25px 15px;
         align-items: center;
         nav {
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 992px) {
-    header {
+    .page {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .menu {
@@ -88,7 +88,7 @@
 
 
 @media (max-width: 480px) {
-    header {
+    .page {
         padding: 15px 15px;
         grid-template-columns: 1fr 1fr 1fr;
         .language {

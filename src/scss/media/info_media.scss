@@ -7,8 +7,10 @@
             "title   images"
             "title  images"
             "search   search";
+        padding-top: 50px;
         .search {
             justify-self: center;
+            margin-top: 100px;
         }
         .images {
             max-height: 500px;
@@ -53,19 +55,19 @@
             padding: 5% 1% 5% 10%;
             
             &__info {
-                #country {
+                .country {
                     width: max-content;
                     padding-left: 15%;
                 }
-                #night {
+                .night {
                     width: max-content;
                     padding-left: 18%;
                 }
-                #date {
+                .date {
                     width: max-content;
                     padding-left: 15%;
                 }
-                #human {
+                .human {
                     width: max-content;
                     padding-left: 10%;
                 }
@@ -102,17 +104,17 @@
         "search";
         .search {
            &__info {
-                #country {
+                .country {
                     font-size: 16px;
                     padding-left: 20%;
                 }
-                #night {
+                .night {
                     font-size: 16px;
                 }
-                #date {
+                .date {
                     font-size: 16px;
                 }
-                #human {
+                .human {
                     font-size: 16px;
                 }
             }

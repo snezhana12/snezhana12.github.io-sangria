@@ -13,9 +13,9 @@
     />
   </head>
   <body>
-    <section class="header">
+    <header class="header">
       <div class="container">
-        <header>
+        <section class="page">
           <div class="logo">
             <img src="img/logo.svg" alt="" />
           </div>
@@ -47,10 +47,10 @@
             <li class="active" data-lang="ua">UA</li>
             <li data-lang="en">EN</li>
           </ul>
-        </header>
+        </section>
       </div>
-    </section>
-
+    </header>
+    <main>
     <section class="info">
       <div class="container">
         <div class="title__wrapper">
@@ -62,11 +62,11 @@
           <form action="" class="search" method="get">
             <div class="search__info">
               <input
-                id="country"
+                class="country"
                 type="text"
                 placeholder="Де хочете відпочити?"
               />
-              <select id="night">
+              <select class="night">
                 <option value="1 ніч">1 ніч</option>
                 <option value="2 ночі">2 ночі</option>
                 <option value="3 ночі">3 ночі</option>
@@ -84,13 +84,12 @@
               </select>
               <input
                 placeholder="20 -25 вересня"
-                class="textbox-n"
+                class="textbox-n date"
                 type="text"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
-                id="date"
               />
-              <select id="human">
+              <select class="human">
                 <option value="1 дорослий">1 дорослий</option>
                 <option value="2 дорослих">2 дорослих</option>
                 <option value="3 дорослих">3 дорослих</option>
@@ -112,7 +111,7 @@
         </div>
       </div>
     </section>
-
+  </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
