@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangria Travel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <nav>
+            <ul class="menu">
+              <li class="menu_item">
+                <a href="#" class="menu_link">Знайти тур</a>
+              </li>
+              <li class="menu_item">
+                <a href="#require" class="menu_link">Про нас</a>
+              </li>
+              <li class="menu_item">
+                <a href="#require" class="menu_link">Відгуки</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Пропозиції</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Залишити запит</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          <ul class="language">
+            <li class="active" data-lang="ua">UA</li>
+            <li data-lang="en">EN</li>
+          </ul>
+        </header>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="title__wrapper">
+          <div class="title">
+            <div class="title__info"><h2>Travel agency</h2></div>
+            <div class="subtitle__info"><h1>SANGRIA</h1></div>
+          </div>
+
+          <form action="" class="search" method="get">
+            <div class="search__info">
+              <input
+                id="country"
+                type="text"
+                placeholder="Де хочете відпочити?"
+              />
+              <select id="night">
+                <option value="1 ніч">1 ніч</option>
+                <option value="2 ночі">2 ночі</option>
+                <option value="3 ночі">3 ночі</option>
+                <option value="4 ночі">4 ночі</option>
+                <option value="5 ночей">5 ночей</option>
+                <option value="6 ночей">6 ночей</option>
+                <option value="7 ночей">7 ночей</option>
+                <option value="8 ночей">8 ночей</option>
+                <option value="9 ночей">9 ночей</option>
+                <option value="10 ночей">10 ночей</option>
+                <option value="11 ночей">11 ночей</option>
+                <option value="12 ночей">12 ночей</option>
+                <option value="13 ночей">13 ночей</option>
+                <option value="14 ночей">14 ночей</option>
+              </select>
+              <input
+                placeholder="20 -25 вересня"
+                class="textbox-n"
+                type="text"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+                id="date"
+              />
+              <select id="human">
+                <option value="1 дорослий">1 дорослий</option>
+                <option value="2 дорослих">2 дорослих</option>
+                <option value="3 дорослих">3 дорослих</option>
+                <option value="4 дорослих">4 дорослих</option>
+                <option value="5 дорослих">5 дорослих</option>
+                <option value="6 дорослих">6 дорослих</option>
+                <option value="7 дорослих">7 дорослих</option>
+                <option value="8 дорослих">8 дорослих</option>
+              </select>
+            </div>
+            <button type="submit" value="Знайти тур">Знайти тур</button>
+          </form>
+          <div class="images">
+            <img src="img/title/img1.jpg" alt="img1" />
+            <img src="img/title/img2.jpg" alt="img2" />
+            <img src="img/title/img3.jpg" alt="img3" />
+            <img src="img/title/img4.jpg" alt="img4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

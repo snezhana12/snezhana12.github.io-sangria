@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+    header {
+        padding: 25px 15px;
+        align-items: center;
+        nav {
+            .menu {
+                justify-content: flex-start;
+                &_link {
+                    font-size: 18px;
+                }
+                &_item {
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu {
+        position: fixed;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: 0.6 all;
+        &_active {
+            padding-top: 10%;
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border-right: 0;
+            margin: 10px;
+     
+        }
+        &_link {
+            font-size: 20px;
+            
+        }
+        
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 6px;
+            transition: 0.5s all;
+        }
+        
+        &_active {
+                :first-child {
+                    transform: rotate(45deg);
+                    background-color:#C06F23;
+                }
+                :nth-child(2) {
+                    display: none;
+                }
+                :last-child {
+                    transform: rotate(-45deg);
+                    background-color:#C06F23;
+                }
+                span {
+                    margin-bottom: -3px;
+                     } 
+                }
+                
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        .language {
+            margin-left: -100%;
+        }
+        .menu {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    
+}
