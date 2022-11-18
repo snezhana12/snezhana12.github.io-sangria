@@ -3,7 +3,7 @@ $('.language').click(function () {
 });
 
 $('.language li').click(function () {
-    var setLang = $('.language').data('location'),
+    let setLang = $('.language').data('location'),
         dataLangSelect = $(this).data('lang');
     $('.language').data('location', dataLangSelect);
     $('.language li').removeClass('active');
