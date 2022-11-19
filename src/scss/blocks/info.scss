@@ -1,4 +1,5 @@
-
+$white: #fff;
+$orange: #F18D30;
 
 .title__wrapper {
     display: grid;
@@ -21,7 +22,7 @@
             font-weight: 400;
             font-size: 48px;
             line-height: 59px;
-            color: #ffffff;
+            color: $white;
             text-align: center;
         }
     }
@@ -58,6 +59,14 @@
     }
     :last-child {
         border-radius: 0px 77px 133px 0px;
+    }
+    img {
+        object-fit: cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+         &:hover {
+            transform: scale(1.05);
+      }
     }
 }
     .search {
@@ -119,15 +128,15 @@
             height: 59px;
             width: 240px;
             border-radius: 50px;
-            background: #c06f23;
+            background: $orange;
             font-weight: 400;
             font-size: 24px;
             line-height: 29px;
-            color: #ffffff;  
+            color: $white;  
         }
         button:hover  {
                 background: rgba(48, 241, 241, 0.37);
-                color: #c06f23;
+                color: $orange;
             }
 
     }

@@ -1,3 +1,6 @@
+$white: #fff;
+$orange: #F18D30;
+
 .hamburger {
     display: none;
 }
@@ -23,14 +26,14 @@
             margin: 0;
             list-style-type: none;
 	        &_link {
-                color: #FFFFFF;
+                color: $white;
                 font-weight: 400;
                 font-size: 20px;
                 text-align: center;
                 text-decoration: none;
                 &:hover {
                     text-decoration: none;
-                    color: #F18D30;
+                    color: $orange;
                 }
             }
 			&_item {
@@ -47,7 +50,7 @@
     .language {
         display: inline-flex;
         flex-direction: column;
-        color: #fff;
+        color: $white;
         height: 40px;
         overflow: hidden;
         cursor: pointer;
@@ -59,7 +62,7 @@
             justify-content: center;
             order: 2;
             padding: 10px;
-            color: #FFFFFF;
+            color: $white;
             font-weight: 400;
             font-size: 20px;
             .active {
@@ -69,7 +72,7 @@
         }
         li:hover {
             cursor: pointer;
-            color:#F18D30;
+            color:$orange;
         }
         }
         .language.open {
